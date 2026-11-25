@@ -1,110 +1,28 @@
-DSShield error report
-Timestamp: 2026-11-25T19:22:59+02:00
-Version: 0.10.118-unsigned
-Input directory: /storage/emulated/0/MT2/apks/TestPro/DSEncryption
-Context: APK protection failed: /storage/emulated/0/MT2/apks/TestPro/DSEncryption/4_5776169630829650116.apk
-Exception: RuntimeError: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-
-Traceback:
-Traceback (most recent call last):
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1493, in recover
-    result = repair_smali_tree_after_assembly_failure(
-        smali_root, output_path, java, env, smali_jar,
-    ...<2 lines>...
-        **({"api_level": api_level} if api_level is not None else {}),
-        progress=lambda message: _say(message))
-  File "/storage/emulated/0/MT2/apks/TestPro/repair_engine.py", line 2095, in repair_smali_tree_after_assembly_failure
-    raise RuntimeError(
-    ...<2 lines>...
-        + (" Original assembler error: " + original_error[-2500:] if original_error else ""))
-RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 4992, in _protect_apk
-    result = future.result()
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 447, in result
-    return self.__get_result()
-           ~~~~~~~~~~~~~~~~~^^
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
-    raise self._exception
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
-    result = ctx.run(self.task)
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
-    return fn(*args, **kwargs)
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 4969, in _assemble_one_dex
-    preserved_class_count = _assemble_smali_verified(
-        smali_root, assembled, java, env, smali_jar, "APK DEX '{}'".format(dex_name),
-        jobs=tool_jobs,
-        expected_descriptors=validated_smali_descriptors.get(str(smali_root.resolve())),
-        api_level=source_api, expected_dex_version=source_version)
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1952, in _assemble_smali_verified
-    _assemble_smali(smali_root, output_path, java, env, smali_jar, label, jobs=jobs,
-    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    api_level=api_level, expected_dex_version=expected_dex_version)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1544, in _assemble_smali
-    return recover(original)
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1508, in recover
-    raise RuntimeError(
-        f"{original_error}\n[DSRepair recovery failed] {type(repair_error).__name__}: {repair_error}") from repair_error
-RuntimeError: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
-
+FATAL EXCEPTION: main
+Process: build.bytes.temproot, PID: 9355
+java.lang.RuntimeException: Unable to get provider androidx.startup.InitializationProvider: bd: bd: java.lang.IllegalAccessError: Method 'int[] of.ۣۧۡۧ()' is inaccessible to class 'pf' (declaration of 'pf' appears in /data/app/~~wSoPLzTm6LcqzFROQV67jA==/build.bytes.temproot-JghGDKY07ztYRCTfbR07qQ==/base.apk)
+	at android.app.ActivityThread.installProvider(ActivityThread.java:9649)
+	at android.app.ActivityThread.installContentProviders(ActivityThread.java:9123)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8721)
+	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(ActivityThread.java:0)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2739)
+	at android.os.Handler.dispatchMessage(Handler.java:110)
+	at android.os.Looper.loopOnce(Looper.java:282)
+	at android.os.Looper.loop(Looper.java:397)
+	at android.app.ActivityThread.main(ActivityThread.java:10131)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:940)
+Caused by: bd: bd: java.lang.IllegalAccessError: Method 'int[] of.ۣۧۡۧ()' is inaccessible to class 'pf' (declaration of 'pf' appears in /data/app/~~wSoPLzTm6LcqzFROQV67jA==/build.bytes.temproot-JghGDKY07ztYRCTfbR07qQ==/base.apk)
+	at m5.۟۟ۦ۠(dex-id-82ca7751ef03b5f9b6734b7b9b378b73aeaa6658-7880:109)
+	at m5.d(dex-id-82ca7751ef03b5f9b6734b7b9b378b73aeaa6658-7865:6)
+	at m5.۠ۦۣۣ۠ۥۡ(dex-id-82ca7751ef03b5f9b6734b7b9b378b73aeaa6658-7886:93)
+	at m5.c(dex-id-82ca7751ef03b5f9b6734b7b9b378b73aeaa6658-7864:4)
+	at androidx.startup.InitializationProvider.onCreate(dex-id-82ca7751ef03b5f9b6734b7b9b378b73aeaa6658-2803:52)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2761)
+	at android.content.ContentProvider.attachInfo(ContentProvider.java:2730)
+	at android.app.ActivityThread.installProvider(ActivityThread.java:9644)
+	... 11 more
+Caused by: bd: java.lang.IllegalAccessError: Method 'int[] of.ۣۧۡۧ()' is inaccessible to class 'pf' (declaration of 'pf' appears in /data/app/~~wSoPLzTm6LcqzFROQV67jA==/build.bytes.temproot-JghGDKY07ztYRCTfbR07qQ==/base.apk)
+	at m5.۟۟ۦ۠(dex-id-82ca7751ef03b5f9b6734b7b9b378b73aeaa6658-7880:109)
+	at m5.d(dex-id-82ca7751ef03b5f9b6734b7b9b378b73aeaa6658-7865:6)
