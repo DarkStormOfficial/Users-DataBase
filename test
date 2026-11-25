@@ -1,721 +1,110 @@
-DSShield – Comprehensive Technical Investigation and Repair Specification
+DSShield error report
+Timestamp: 2026-11-25T19:22:59+02:00
+Version: 0.10.118-unsigned
+Input directory: /storage/emulated/0/MT2/apks/TestPro/DSEncryption
+Context: APK protection failed: /storage/emulated/0/MT2/apks/TestPro/DSEncryption/4_5776169630829650116.apk
+Exception: RuntimeError: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+
+Traceback:
+Traceback (most recent call last):
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1493, in recover
+    result = repair_smali_tree_after_assembly_failure(
+        smali_root, output_path, java, env, smali_jar,
+    ...<2 lines>...
+        **({"api_level": api_level} if api_level is not None else {}),
+        progress=lambda message: _say(message))
+  File "/storage/emulated/0/MT2/apks/TestPro/repair_engine.py", line 2095, in repair_smali_tree_after_assembly_failure
+    raise RuntimeError(
+    ...<2 lines>...
+        + (" Original assembler error: " + original_error[-2500:] if original_error else ""))
+RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 4992, in _protect_apk
+    result = future.result()
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 447, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 4969, in _assemble_one_dex
+    preserved_class_count = _assemble_smali_verified(
+        smali_root, assembled, java, env, smali_jar, "APK DEX '{}'".format(dex_name),
+        jobs=tool_jobs,
+        expected_descriptors=validated_smali_descriptors.get(str(smali_root.resolve())),
+        api_level=source_api, expected_dex_version=source_version)
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1952, in _assemble_smali_verified
+    _assemble_smali(smali_root, output_path, java, env, smali_jar, label, jobs=jobs,
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    api_level=api_level, expected_dex_version=expected_dex_version)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1544, in _assemble_smali
+    return recover(original)
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1508, in recover
+    raise RuntimeError(
+        f"{original_error}\n[DSRepair recovery failed] {type(repair_error).__name__}: {repair_error}") from repair_error
+RuntimeError: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: APK DEX 'classes.dex' assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/protected_1.dex'. Output directory entries: ['dex_1/', 'input_1.dex']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[557,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[562,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[576,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[580,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[584,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[586,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[604,4] Invalid register: v17. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/yp.smali[623,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[46,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[66,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[84,4] Invalid register: v16. Must be between v0 and v15, inclusive.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-qysxonab/dex_1/smali/zf.smali[125,4] Invalid register: v16. Must be between v0 and v15, inclusive.
 
-Critical Android DEX Verifier Failures, Register Type Corruption, Flow V3 Safety, and DEX Redistribution
-
-I need you to investigate and improve the DSShield transformation engine based on the following detailed crash evidence and technical requirements.
-
-I cannot upload the latest ZIP or project files from this account because I have reached the daily upload limit. Therefore, I am providing all the important diagnostic information available to me directly in this message.
-
-You should use the DSShield source code and project files already available in your working environment.
-
-IMPORTANT: The objective is to repair the underlying transformation engine, not to hide individual crashes, exclude entire libraries, or weaken the protection system.
-
-Do not assume that every suspected cause is confirmed. Distinguish between:
-
-- Confirmed crash evidence.
-- Strong technical indications.
-- Hypotheses that still require source-code verification.
-
----
-
-PART 1 – CURRENT CRITICAL CRASH: FLOAT/INTEGER REGISTER TYPE MISMATCH
-
-1. Crash information
-
-The latest application crash reports:
-
-java.lang.VerifyError:
-Rejecting class vj4 that attempts to sub-type erroneous class xd1
-
-Caused by:
-java.lang.VerifyError:
-Rejecting class xd1 that attempts to sub-type erroneous class qv2
-
-Caused by:
-java.lang.VerifyError:
-Verifier rejected class qv2
-
-The Android Verifier reports five method failures inside the same class.
-
-float[] qv2.B(float[]):
-[0x30] register v10 has type Integer but expected Float
-
-float qv2.G(float, float[], float[]):
-[0x12] register v7 has type Integer but expected Float
-
-float[] qv2.H(float[], float[]):
-[0x1A] register v4 has type Integer but expected Float
-
-float[] qv2.I(float[], float[]):
-[0x1E] register v7 has type Integer but expected Float
-
-float[] qv2.j(float[], float[], float[]):
-[0x1D] register v3 has type Integer but expected Float
-
-The application crashes during initialization through:
-
-com.google.firebase.provider.FirebaseInitProvider
-
-The relevant class dependency chain is:
-
-qv2
-  ↑
-xd1
-  ↑
-vj4
-
-The most important detail is that "qv2" is the underlying class rejected by the verifier.
-
-The failures involving "xd1" and "vj4" may be consequences of the invalid superclass. Do not assume that those two classes are independently corrupted.
-
-2. Original class structure
-
-The original application contains a class named:
-
-qv2.smali
-
-The five affected methods have these declarations and register counts:
-
-.method public static final B([F)[F
-    .registers 25
-
-.method public static G(F[F[F)F
-    .registers 10
-
-.method public static final H([F[F)[F
-    .registers 23
-
-.method public static final I([F[F)[F
-    .registers 10
-
-.method public static final j([F[F[F)[F
-    .registers 23
-
-These methods perform floating-point calculations using arrays of type "[F".
-
-The original methods contain operations such as:
-
-aget
-aput
-mul-float
-add-float
-sub-float
-div-float
-
-An example from the original "B()" method:
-
-aget v10, v0, v9
-
-mul-float v19, v10, v18
-
-The value loaded into "v10" originates from a float array and is subsequently used in floating-point arithmetic.
-
-This is important because the transformed version apparently causes the verifier to interpret certain registers as Integer where Float is expected.
-
-The exact transformed instructions responsible have not yet been established. Do not claim that the example above is the faulty instruction.
-
-3. Main technical problem
-
-The strongest indication is a register-type consistency failure.
-
-The problem may involve one or more of the following:
-
-A. Incorrect register reuse
-
-A register previously holding a Float value may be reused for an Integer constant or another Integer operation.
-
-Example of a potentially unsafe sequence:
-
-const/4 v10, 0x1
-
-mul-float v19, v10, v18
-
-The above is illustrative only. It demonstrates why a register holding an integer constant cannot automatically be treated as a valid Float operand.
-
-B. Unsafe constant relocation
-
-Flow V3 may relocate constants or rewrite constant instructions.
-
-Investigate all paths handling:
-
-const/4
-const/16
-const
-const/high16
-
-const-wide
-const-wide/16
-const-wide/32
-const-wide/high16
-
-Determine whether a relocated constant:
-
-- Reuses an incompatible register.
-- Changes a register's verifier type.
-- Crosses a branch or control-flow boundary.
-- Changes the type state at a branch merge.
-- Interferes with a later floating-point instruction.
-
-Do not assume that a register is safe to reuse merely because its previous value is no longer used in the linear instruction sequence.
-
-Control-flow paths and verifier type merging must also be considered.
-
-C. Incorrect register remapping
-
-Investigate:
-
-.locals
-.registers
-pN
-vN
-
-For each method, the physical register frame must be calculated correctly.
-
-The general relationship is:
-
-total_registers = local_registers + parameter_register_words
-
-parameter_base = total_registers - parameter_register_words
-
-For an instance method:
-
-- "p0" represents "this".
-- Other parameters follow it.
-
-For a static method:
-
-- Parameters begin at "p0".
-
-If ".locals" or ".registers" changes, physical parameter register positions can change.
-
-Example:
-
-.method public test(I)V
-    .locals 2
-
-This instance method has:
-
-v0 = local
-v1 = local
-v2 = p0 (this)
-v3 = p1 (integer parameter)
-
-After increasing ".locals" to 4:
-
-v0-v3 = local registers
-v4 = p0 (this)
-v5 = p1 (integer parameter)
-
-Therefore, any transformation that changes the register count must recalculate every affected parameter mapping.
-
-Never reuse stale physical register indices.
-
-D. Incorrect instruction rewriting
-
-Inspect transformations involving:
-
-move
-move/from16
-move/16
-
-move-object
-move-object/from16
-move-object/16
-
-move-result
-move-result-object
-move-result-wide
-
-aget
-aget-object
-aput
-aput-object
-
-mul-float
-div-float
-add-float
-sub-float
-neg-float
-
-cmpg-float
-cmpl-float
-
-Check whether transformations preserve the expected source and destination register types.
-
-E. Control-flow verifier inconsistencies
-
-Investigate:
-
-- Conditional branches.
-- Labels and branch targets.
-- Loops and backward branches.
-- Register types at control-flow merge points.
-- Exception handlers.
-- Different execution paths assigning incompatible values to the same register.
-- Wide register pairs.
-
-A method can have valid register indices and still fail verification because its register types are incompatible across execution paths.
-
----
-
-PART 2 – REQUIRED FLOW V3 REGISTER AND TYPE SAFETY ARCHITECTURE
-
-I do not want isolated patches for individual methods.
-
-I want a reliable register-management architecture inside Flow V3.
-
-1. Centralized register-frame management
-
-Create or improve one authoritative register-frame calculation mechanism.
-
-It must:
-
-- Parse method access flags and prototypes.
-- Calculate parameter word counts correctly.
-- Account for instance and static methods.
-- Handle wide parameters ("J" and "D") using two register words.
-- Calculate physical register indices.
-- Recalculate mappings after register-count changes.
-- Validate all referenced registers.
-- Avoid stale register-frame information.
-
-Every transformation stage must use the same authoritative register-frame representation.
-
-2. Type-aware register management
-
-Register indices alone are not sufficient.
-
-The transformation engine must account for verifier-relevant register types, including:
-
-Integer
-Float
-Long
-Double
-Object references
-Null
-Uninitialized references
-Wide register pairs
-
-It should preserve type information when:
-
-- Moving values.
-- Reusing registers.
-- Relocating constants.
-- Generating bridges.
-- Rewriting array operations.
-- Changing method register counts.
-
-Do not infer that a register is Float simply because its value is used in a floating-point instruction.
-
-Its actual type state must be compatible with the instruction and every relevant control-flow path.
-
-3. Safe register reuse
-
-Before reusing a register:
-
-- Establish that its previous value is no longer needed.
-- Verify that the new value's type is compatible with subsequent uses.
-- Check all control-flow paths.
-- Check branch merge points.
-- Check exception-handler paths where applicable.
-- Preserve wide-register pair integrity.
-
-If safety cannot be proven, allocate a different register or skip the individual transformation.
-
-Do not force unsafe register reuse to save registers.
-
-4. Transformation validation
-
-After each register-affecting transformation:
-
-- Validate the method register frame.
-- Validate register indices.
-- Validate parameter mappings.
-- Validate source and destination register compatibility.
-- Validate wide register pairs.
-- Validate instruction operand types.
-- Validate control-flow consistency.
-
-Perform a final validation after all method-level transformations have completed.
-
-A method that fails validation must not be emitted as a partially transformed method.
-
-Preserve the original method or safely skip its transformation and record the exact reason.
-
----
-
-PART 3 – PREVIOUS SENTRY INVALID INVOKE CRASH
-
-There was also an earlier independent crash:
-
-java.lang.VerifyError:
-Verifier rejected class io.sentry.internal.debugmeta.c:
-
-byte[] io.sentry.internal.debugmeta.c.o():
-[0xFFFFFFFF] invalid reg index (4) in non-range invoke (>= 2)
-
-The application crashed during initialization involving:
-
-io.sentry.android.core.performance.f.<init>()
-
-The rejected method was:
-
-io.sentry.internal.debugmeta.c.o(): byte[]
-
-This failure is different from the current Float/Integer type mismatch.
-
-The earlier error indicates an invalid register reference in a non-range invoke instruction.
-
-Investigate the following Flow V3 functions and related code paths:
-
-_method_register_frame()
-_static_invoke_line()
-
-Check whether:
-
-- Any bridge-generation path bypasses "_static_invoke_line()".
-- Some invoke instructions reuse original register tokens directly.
-- Register frames are calculated before a later ".locals" or ".registers" change.
-- "pN" and "vN" conversion is inconsistent.
-- Normal invoke encoding is selected when "/range" is required.
-- "/range" is selected for non-contiguous registers.
-- Argument word counts do not match target prototypes.
-- Wide arguments are handled incorrectly.
-
-For normal invoke instructions using the 35c format:
-
-- Maximum five argument register words.
-- Every register index must fit the 4-bit register field.
-- Every register must exist in the current method frame.
-- Wide arguments must account for both words.
-- The argument word count must match the target method prototype.
-
-For "/range" instructions:
-
-- Registers must form one contiguous range.
-- The complete range must be valid.
-- The argument word count must match the target prototype.
-
-Do not convert every invoke to "/range".
-
-Do not fix the problem by blindly increasing ".locals".
-
-Investigate whether the previous invalid-index crash and the current type-mismatch crash share a common register-management defect. Keep their diagnoses separate until evidence proves a shared cause.
-
----
-
-PART 4 – DEX REDISTRIBUTION AND MT MANAGER
-
-There is another important detail about the build process.
-
-The DSShield build had produced relatively small DEX files, approximately 1–2 MB each.
-
-I wanted to reduce the number of DEX files and make them closer to 5 MB or larger.
-
-For this purpose, I later used MT Manager's Dex Redivision feature with:
-
-Mode: Limit by number of methods
-Number of methods: 64000
-Auto Sign: Enabled
-
-Critical clarification: The application already crashed before I used MT Manager.
-
-Therefore:
-
-- MT Manager cannot be assumed to be the original cause.
-- DSShield's own output must be investigated first.
-- MT Manager must be treated as a separate test variable.
-
-The 64000 value is a method-reference distribution target, not a file-size target.
-
-Do not confuse:
-
-- DEX file size in MB.
-- "method_ids" count.
-- "field_ids" count.
-- "type_ids" count.
-- "class_defs" count.
-
-Each DEX must respect its own identifier-table limits.
-
-Do not raise identifier limits blindly.
-
-A 5 MB file size is not an Android DEX validity requirement.
-
-DEX report discrepancy
-
-A previous build report showed:
-
-output_dex_count: 12
-
-However, the protected ZIP examined in the earlier investigation contained only four DEX files in its "protected/" directory.
-
-Their approximate sizes were:
-
-6.85 MB
-5.77 MB
-5.26 MB
-0.65 MB
-
-Three of the four files exceeded the intended 5 MB target.
-
-Investigate whether:
-
-1. The report counted planned DEX roots rather than actual packaged files.
-2. The ZIP contained outputs from a different build.
-3. The packaging stage omitted some DEX files.
-4. A later packaging or cleanup stage changed the output.
-5. The final APK contains a different DEX set from the intermediate directory.
-
-Verify actual final APK contents.
-
-Do not rely solely on planning reports.
-
----
-
-PART 5 – DEX REDISTRIBUTION REQUIREMENTS
-
-The intended DEX redistribution must operate structurally on classes.
-
-It must never split raw DEX bytes into arbitrary chunks.
-
-Required properties:
-
-1. Every class belongs to exactly one DEX.
-2. No classes are lost.
-3. No classes are duplicated.
-4. Class references remain valid.
-5. Manifest components remain available.
-6. Providers and startup classes remain loadable.
-7. Reflection-sensitive classes are handled safely.
-8. JNI-sensitive classes are handled safely.
-9. Each DEX respects identifier-table limits.
-10. Bridge generation does not overflow reference tables.
-11. Final DEX files are validated after all transformations.
-12. Packaging includes every intended DEX file.
-
-The redistribution algorithm should consider the identifier tables and class dependencies, not just the number of classes or file size.
-
-The target of approximately 5 MB should be treated as a configurable optimization goal, not a strict validity condition.
-
----
-
-PART 6 – FLOW ENGINE INDEPENDENCE
-
-DSShield has multiple transformation engines:
-
-- Flow V3.
-- Flow V2.
-- Legacy Flow and other existing paths.
-
-Preserve their independence.
-
-Do not introduce changes that silently alter V2 or legacy behavior when repairing V3.
-
-Shared validation utilities may be appropriate, but each engine must retain its own transformation logic and configuration.
-
-Do not:
-
-- Disable Flow V3.
-- Exclude entire Sentry or Firebase libraries.
-- Exclude entire classes as a general workaround.
-- Disable all floating-point transformations.
-- Disable all bridge generation.
-- Reduce the protection strength unnecessarily.
-
-A safe transformation should remain enabled when its register and verifier correctness can be established.
-
----
-
-PART 7 – REQUIRED REGRESSION TESTS
-
-Build a comprehensive test suite.
-
-A. Register-frame tests
-
-Test:
-
-- ".locals".
-- ".registers".
-- Static methods.
-- Instance methods.
-- Constructors.
-- "p0" and higher parameters.
-- "v0" and higher local registers.
-- Parameter remapping after local-register expansion.
-- Wide parameters.
-- Multiple transformation stages.
-
-B. Register-type tests
-
-Test:
-
-- Integer constants.
-- Float values.
-- Long values.
-- Double values.
-- Object references.
-- Null.
-- Array element types.
-- Float arrays ("[F").
-- Integer arrays.
-- Register reuse.
-- Incompatible values reaching branch merge points.
-
-C. Floating-point tests
-
-Test methods containing:
-
-aget
-aput
-mul-float
-add-float
-sub-float
-div-float
-neg-float
-cmpg-float
-cmpl-float
-
-Include methods with multiple branches and loops.
-
-D. Invoke tests
-
-Test:
-
-- Normal invokes with up to five argument words.
-- Registers above v15.
-- Contiguous register ranges.
-- Non-contiguous register arguments.
-- Wide arguments.
-- Mixed argument types.
-- Bridge generation.
-- Parameter forwarding.
-- Register remapping after bridge generation.
-
-E. DEX redistribution tests
-
-Test:
-
-- Small applications.
-- Large applications.
-- Multidex applications.
-- Classes with cross-DEX references.
-- Manifest components.
-- Startup providers.
-- Identifier-table limits.
-- Bridge reference growth.
-- Final APK DEX enumeration.
-- No missing or duplicated classes.
-
-F. End-to-end verifier tests
-
-A successful Python execution or Smali assembly is not enough.
-
-The final validation must include:
-
-1. Smali assembly.
-2. DEX structural validation.
-3. Identifier-table validation.
-4. Android DEX verifier validation.
-5. APK packaging validation.
-6. Runtime testing where available.
-
-The tests must include the exact failure patterns described in this message.
-
----
-
-PART 8 – REQUIRED IMPLEMENTATION STRATEGY
-
-I want the investigation and implementation to follow this order:
-
-Stage 1 – Source-code audit
-
-Inspect the actual source code of:
-
-- Flow V3.
-- Flow V3 method engine.
-- Register-frame helpers.
-- Constant relocation.
-- Bridge generation.
-- Invoke generation.
-- DEX redistribution.
-- APK packaging.
-- Final validation.
-
-Identify the earliest transformation stage that can introduce each invalid result.
-
-Stage 2 – Root-cause report
-
-Before modifying files, explain:
-
-- Why the five qv2 methods fail.
-- Whether the five failures share one root cause.
-- Why the Sentry method previously failed.
-- Whether the two crashes share a register-management defect.
-- Whether DEX redistribution contributes to either failure.
-- Which source functions are responsible.
-
-Clearly separate confirmed findings from hypotheses.
-
-Stage 3 – Repair design
-
-Present a minimal but robust repair design.
-
-Prioritize:
-
-- Correct register-frame calculations.
-- Type-aware register safety.
-- Control-flow-aware validation.
-- Correct invoke encoding.
-- Safe transformation fallback.
-- Final DEX validation.
-
-Avoid unnecessary architectural rewrites.
-
-Stage 4 – Implementation
-
-Only after the cause is established, implement the required changes.
-
-Preserve Flow V3's capabilities.
-
-Do not weaken the transformation engine simply to make the application run.
-
-Stage 5 – Regression testing
-
-Run the complete relevant test suite.
-
-Show which tests passed and which failed.
-
-Do not claim Android runtime verification if only static checks were performed.
-
-Stage 6 – Delivery
-
-Provide:
-
-- Updated source files.
-- A complete updated ZIP.
-- A clear list of modifications.
-- Test results.
-- Known remaining limitations.
-
----
-
-FINAL PRIORITY
-
-The highest priority is to eliminate verifier-invalid output generated by DSShield.
-
-The current Float/Integer mismatch in "qv2" is the immediate issue.
-
-The previous Sentry invalid-register invoke is a separate issue that must also be addressed.
-
-I want a transformation engine that:
-
-- Preserves register indices.
-- Preserves register types.
-- Preserves control-flow correctness.
-- Generates valid invoke instructions.
-- Respects DEX identifier limits.
-- Distributes classes safely.
-- Preserves the independence of Flow V3, Flow V2, and legacy engines.
-
-Do not solve individual crashes with hardcoded class exclusions. Fix the underlying transformation logic and prove the repair with regression tests.
