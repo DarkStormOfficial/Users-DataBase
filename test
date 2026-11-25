@@ -1,49 +1,49 @@
 DSShield error report
-Timestamp: 2026-11-25T20:34:32+02:00
+Timestamp: 2026-11-25T20:40:42+02:00
 Version: 0.10.118-unsigned
 Input directory: /storage/emulated/0/MT2/apks/TestPro/DSEncryption
 Context: APK protection failed: /storage/emulated/0/MT2/apks/TestPro/DSEncryption/4_5776169630829650116.apk
 Exception: RuntimeError: Flow V3 type validation found pre-existing or unrecoverable mismatches:
-La3;->run()V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types
-La8;->۟ۡۡۧ۟۠(Llc;Ljava/util/List;I)Lo;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
-La8;->ۢ۠ۥۥ(La8;Lj9;)Z: return: v2 is ref, expected int
-La8;->ۤۥ۠ۦۧۢ(La8;Lo;Lo;)Lo;: return-object: v4 is int, expected ref
-La8;->ۥۨۢ۟۠(Lgm;Ljava/util/List;Llc;Lg4;)Lg4;: control-flow merge: v10 receives incompatible types; control-flow merge: v12 receives incompatible types; control-flow merge: v13 receives incompatible types; control-flow merge: v14 receives incompatible types
-Lad;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z: control-flow merge: v0 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v5 receives incompatible types
-Lai;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V: control-flow merge: v11 receives incompatible types
-Lai;->onDraw(Landroid/graphics/Canvas;)V: control-flow merge: v0 receives incompatible types
-Lai;->ۣ۟۠ۧ۠ۡۦۢ(Lai;)V: control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types
-Lai;->ۣۣۢ۟ۧۥۦۦ(Lai;I)V: control-flow merge: v4 receives incompatible types
-Lai;->ۢۥۨۥۧ۟۟(Lai;I)V: control-flow merge: v5 receives incompatible types
-Lal;->ۣۡ۠(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/util/LinkedHashMap;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
-Lal;->ۡۡۦۧ۠۠ۤ(Lvo;Ljava/util/HashMap;Z)Luo;: add-int/lit8: v1 is conflict, expected int; add-int/lit8: v1 is ref, expected int; control-flow merge: v1 receives incompatible types; control-flow merge: v2 receives incompatible types
-Lal;->ۡۢ۟ۧۦۨ(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;Ljava/lang/String;I)Lc4;: control-flow merge: v10 receives incompatible types; control-flow merge: v8 receives incompatible types; control-flow merge: v9 receives incompatible types; move-object: v11 is int, expected ref
-Lal;->ۢ۟ۨ۟ۢۧۢ۟(Ljava/lang/String;)[Lyk;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; sub-int/2addr: v5 is ref, expected int
-Lal;->ۣۤ۟ۧۨۦ(Lvo;Ljava/util/Set;)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; move-object: v2 is conflict, expected ref; move-object: v7 is int, expected ref
-Lal;->ۤۥ۟۟([Lyk;Landroid/graphics/Path;)V: add-float/2addr: v11 is conflict, expected float; add-float/2addr: v11 is int, expected float; add-float/2addr: v15 is conflict, expected float; add-float/2addr: v15 is int, expected float
-Lal;->ۥۢۢۨ۟ۧۡۨ(I)Ljava/lang/String;: return-object: v2 is int, expected ref
-Lal;->ۥۤۧ(Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;)Ljava/util/LinkedHashMap;: control-flow merge: v3 receives incompatible types
-Lal;->ۦ۠ۦۥۤ۠۟(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/lang/Long;: control-flow merge: v1 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v6 receives incompatible types; move-object: v3 is int, expected ref
-Lal;->ۦۣ۠ۨۥۦۣ۟(Ljava/lang/Object;)Ljava/util/LinkedHashMap;: control-flow merge: v1 receives incompatible types; control-flow merge: v4 receives incompatible types; move-object: v1 is int, expected ref; move-object: v4 is conflict, expected ref
-Lal;->ۨۦۣۡ۠ۥۣ(I)Landroid/graphics/PorterDuff$Mode;: return-object: v3 is int, expected ref
-Lan;->ۥۨۧ۠(FFZ)F: mul-float/2addr: v0 is int, expected float
-Lao;->ۣۣ۟۠۟۟ۢ(Landroid/content/res/TypedArray;ILs9;)Ls9;: control-flow merge: v5 receives incompatible types
-Lao;->۠ۢ۟ۤۨ(Landroid/content/Context;IILh;)Lzn;: control-flow merge: v0 receives incompatible types; control-flow merge: v10 receives incompatible types; control-flow merge: v11 receives incompatible types; control-flow merge: v12 receives incompatible types
-Lao;->ۣۢ۠ۤ۠ۦۨ۠(Lao;Landroid/graphics/RectF;)Z: control-flow merge: v4 receives incompatible types; control-flow merge: v8 receives incompatible types
-Lap;->toString()Ljava/lang/String;: aget-object: v3 is int, expected ref; aget: v3 is conflict, expected ref; aget: v3 is int, expected ref; control-flow merge: v3 receives incompatible types
-Las;->ۣ۟ۡۨۨۨ(Las;F)V: mul-float/2addr: v0 is int, expected float
-Las;->۠ۥۦۥۡۦۨ(Las;)F: div-float/2addr: v0 is int, expected float
-Las;->ۣۣۨ۠۟ۨۤۧ(Las;Lxr;Landroid/graphics/Matrix;Landroid/graphics/Canvas;II)V: cmpl-float: v14 is int, expected float; cmpl-float: v7 is int, expected float; control-flow merge: v0 receives incompatible types; control-flow merge: v10 receives incompatible types
-Lau;->ۣۥۢۥۥ(Lau;)Lja;: return-object: v2 is int, expected ref
-Lb0;-><clinit>()V: control-flow merge: v3 receives incompatible types; control-flow merge: v5 receives incompatible types; control-flow merge: v7 receives incompatible types
-Lb0;->toString()Ljava/lang/String;: control-flow merge: v1 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v6 receives incompatible types
-Lb0;->ۣۡۢۥۣۤۡ(Lb0;La0;)V: control-flow merge: v1 receives incompatible types; move-object: v0 is int, expected ref
-Lb0;->ۢ۠ۤۥۣ۟(Lb0;)Z: return: v1 is ref, expected int
-Lb0;->ۢۨۥۥۨۨۥۢ(Ljava/lang/Object;)Ljava/lang/Object;: return-object: v1 is int, expected ref
-Lb0;->ۦۢۦۦۡۧۤ۟(Lb0;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;: control-flow merge: v1 receives incompatible types; control-flow merge: v10 receives incompatible types; control-flow merge: v15 receives incompatible types; control-flow merge: v3 receives incompatible types
-Lb0;->ۧ۠ۡۤۢ۠(Lb0;)V: control-flow merge: v6 receives incompatible types; move-object: v1 is int, expected ref
-Lb2;->۠ۡۦۤ۠ۢ(Lb2;I)J: return-wide: v2 is ref, expected long
-Lb4;->۟ۤۧۦۥۦ(Lb4;)Landroid/content/res/ColorStateList;: return-object: v1 is int, expected ref
+La2;->handleMessage(Landroid/os/Message;)V: invoke-interface: v4 is int, expected ref; invoke-interface: v5 is ref, expected int
+La3;->run()V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct/range: v9 is ref, expected int
+La4;->ۧۢۢۧۨ(La4;Landroid/util/AttributeSet;I)V: control-flow merge: v0 receives incompatible types; control-flow merge: v1 receives incompatible types
+La7;->equals(Ljava/lang/Object;)Z: control-flow merge: v4 receives incompatible types
+La8;-><init>(Lvo;Ljava/util/ArrayList;)V: invoke-static: v7 is int, expected ref
+La8;->equals(Ljava/lang/Object;)Z: control-flow merge: v3 receives incompatible types
+La8;->ۣۤۧ۠ۤ(La8;Lj9;)Z: return: v2 is ref, expected int
+La8;->ۥۦ۠ۥۨۥۣۢ(Lgm;Ljava/util/List;Llc;Lg4;)Lg4;: control-flow merge: v10 receives incompatible types; control-flow merge: v12 receives incompatible types; control-flow merge: v15 receives incompatible types; control-flow merge: v2 receives incompatible types
+La8;->ۧۥۧۦ(La8;)I: invoke-direct: v1 is int, expected ref
+La8;->ۨ۠۟ۦۥ(La8;Lo;Lo;)Lo;: return-object: v4 is int, expected ref
+La8;->ۨۢۡۡ۟ۨۧ(Llc;Ljava/util/List;I)Lo;: control-flow merge: v0 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v5 receives incompatible types; invoke-virtual: v0 is conflict, expected ref
+La8;->ۨۦۣۣۤۨۤۦ(La8;)Ljava/lang/Object;: invoke-direct: v1 is int, expected ref
+La;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V: invoke-direct: v7 is int, expected ref
+La;->j(Ljava/lang/Object;Ljava/lang/String;)V: invoke-direct: v5 is int, expected ref
+Lab;->ۤۧۧۥۣۡۢ(Lab;Lrd;)V: control-flow merge: v0 receives incompatible types; invoke-direct: v2 is int, expected ref
+Lac;->hashCode()I: invoke-static: v4 is ref, expected int
+Lac;->toString()Ljava/lang/String;: invoke-static: v0 is ref, expected int; invoke-static: v15 is ref, expected int
+Lad;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z: add-float/2addr: v0 is int, expected float; control-flow merge: v0 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v4 receives incompatible types
+Lad;->onViewDetachedFromWindow(Landroid/view/View;)V: invoke-virtual: v3 is int, expected ref
+Lai;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V: control-flow merge: v11 receives incompatible types; control-flow merge: v2 receives incompatible types; invoke-interface: v11 is int, expected ref; invoke-super: v11 is int, expected ref
+Lai;->onCreateDrawableState(I)[I: invoke-static: v0 is int, expected ref
+Lai;->onDraw(Landroid/graphics/Canvas;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v3 receives incompatible types; invoke-virtual: v4 is int, expected float; invoke-virtual: v8 is ref, expected int
+Lai;->onRestoreInstanceState(Landroid/os/Parcelable;)V: invoke-virtual: v4 is ref, expected int
+Lai;->ۣ۟ۧۧۥۣ۟۟(Lai;I)V: control-flow merge: v4 receives incompatible types; invoke-virtual: v4 is conflict, expected ref; invoke-virtual: v4 is int, expected ref
+Lai;->ۤ۟ۦۥ(Lai;I)V: control-flow merge: v5 receives incompatible types; invoke-virtual: v1 is int, expected ref
+Lai;->ۤۦۤۥۢ(Lai;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types
+Lai;->ۦۢ۠ۥ(Lai;)Landroid/content/res/ColorStateList;: invoke-static: v4 is int, expected float; invoke-static: v5 is int, expected float
+Lai;->ۨۦۥۥۣۦۣۥ(Lai;Z)V: invoke-static: v3 is int, expected ref
+Lal;->ۡۡۦۥۥۢ([Lyk;Landroid/graphics/Path;)V: add-float/2addr: v11 is conflict, expected float; add-float/2addr: v11 is int, expected float; add-float/2addr: v15 is conflict, expected float; add-float/2addr: v15 is int, expected float
+Lal;->ۡۡۨ۟ۨۥۢۨ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/util/LinkedHashMap;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
+Lal;->ۣ۟ۧۦ(Ljava/lang/String;)[Lyk;: aput: v3 is float, expected int; control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types
+Lal;->ۤ۠ۤ(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;Ljava/lang/String;I)Lc4;: control-flow merge: v8 receives incompatible types; invoke-direct: v11 is int, expected ref; invoke-direct: v8 is ref, expected int; move-object: v11 is int, expected ref
+Lal;->ۤۡ۟۟ۥ(Lvo;Ljava/util/Set;)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct: v4 is conflict, expected ref; invoke-direct: v7 is int, expected ref
+Lal;->ۣۤۧ۟(Lvo;Ljava/util/HashMap;Z)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v5 receives incompatible types; control-flow merge: v6 receives incompatible types
+Lal;->ۤۤۢۧ(I)Landroid/graphics/PorterDuff$Mode;: return-object: v3 is int, expected ref
+Lal;->ۤۨۦ(Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;)Ljava/util/LinkedHashMap;: control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v3 is conflict, expected ref; invoke-interface: v3 is int, expected ref
+Lal;->ۦۡۤ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/lang/Long;: control-flow merge: v1 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v6 receives incompatible types; invoke-interface: v14 is conflict, expected ref
+Lal;->ۦۦۣۤ۟ۢۤ۟(Ljava/lang/Object;)Ljava/util/LinkedHashMap;: control-flow merge: v1 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v4 is conflict, expected ref; move-object: v1 is int, expected ref
+Lan;-><clinit>()V: invoke-static: v0 is long, expected double
+Lan;->۟۠ۦ(FFZ)F: double-to-float: v2 is long, expected double
 
 Traceback:
 Traceback (most recent call last):
@@ -67,49 +67,49 @@ Traceback (most recent call last):
     ...<4 lines>...
         progress=progress,
     )
-  File "/storage/emulated/0/MT2/apks/TestPro/flow_v3_transform.py", line 875, in transform
+  File "/storage/emulated/0/MT2/apks/TestPro/flow_v3_transform.py", line 850, in transform
     raise RuntimeError(
     ...<2 lines>...
     )
 RuntimeError: Flow V3 type validation found pre-existing or unrecoverable mismatches:
-La3;->run()V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types
-La8;->۟ۡۡۧ۟۠(Llc;Ljava/util/List;I)Lo;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
-La8;->ۢ۠ۥۥ(La8;Lj9;)Z: return: v2 is ref, expected int
-La8;->ۤۥ۠ۦۧۢ(La8;Lo;Lo;)Lo;: return-object: v4 is int, expected ref
-La8;->ۥۨۢ۟۠(Lgm;Ljava/util/List;Llc;Lg4;)Lg4;: control-flow merge: v10 receives incompatible types; control-flow merge: v12 receives incompatible types; control-flow merge: v13 receives incompatible types; control-flow merge: v14 receives incompatible types
-Lad;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z: control-flow merge: v0 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v5 receives incompatible types
-Lai;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V: control-flow merge: v11 receives incompatible types
-Lai;->onDraw(Landroid/graphics/Canvas;)V: control-flow merge: v0 receives incompatible types
-Lai;->ۣ۟۠ۧ۠ۡۦۢ(Lai;)V: control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types
-Lai;->ۣۣۢ۟ۧۥۦۦ(Lai;I)V: control-flow merge: v4 receives incompatible types
-Lai;->ۢۥۨۥۧ۟۟(Lai;I)V: control-flow merge: v5 receives incompatible types
-Lal;->ۣۡ۠(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/util/LinkedHashMap;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
-Lal;->ۡۡۦۧ۠۠ۤ(Lvo;Ljava/util/HashMap;Z)Luo;: add-int/lit8: v1 is conflict, expected int; add-int/lit8: v1 is ref, expected int; control-flow merge: v1 receives incompatible types; control-flow merge: v2 receives incompatible types
-Lal;->ۡۢ۟ۧۦۨ(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;Ljava/lang/String;I)Lc4;: control-flow merge: v10 receives incompatible types; control-flow merge: v8 receives incompatible types; control-flow merge: v9 receives incompatible types; move-object: v11 is int, expected ref
-Lal;->ۢ۟ۨ۟ۢۧۢ۟(Ljava/lang/String;)[Lyk;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; sub-int/2addr: v5 is ref, expected int
-Lal;->ۣۤ۟ۧۨۦ(Lvo;Ljava/util/Set;)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; move-object: v2 is conflict, expected ref; move-object: v7 is int, expected ref
-Lal;->ۤۥ۟۟([Lyk;Landroid/graphics/Path;)V: add-float/2addr: v11 is conflict, expected float; add-float/2addr: v11 is int, expected float; add-float/2addr: v15 is conflict, expected float; add-float/2addr: v15 is int, expected float
-Lal;->ۥۢۢۨ۟ۧۡۨ(I)Ljava/lang/String;: return-object: v2 is int, expected ref
-Lal;->ۥۤۧ(Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;)Ljava/util/LinkedHashMap;: control-flow merge: v3 receives incompatible types
-Lal;->ۦ۠ۦۥۤ۠۟(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/lang/Long;: control-flow merge: v1 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v6 receives incompatible types; move-object: v3 is int, expected ref
-Lal;->ۦۣ۠ۨۥۦۣ۟(Ljava/lang/Object;)Ljava/util/LinkedHashMap;: control-flow merge: v1 receives incompatible types; control-flow merge: v4 receives incompatible types; move-object: v1 is int, expected ref; move-object: v4 is conflict, expected ref
-Lal;->ۨۦۣۡ۠ۥۣ(I)Landroid/graphics/PorterDuff$Mode;: return-object: v3 is int, expected ref
-Lan;->ۥۨۧ۠(FFZ)F: mul-float/2addr: v0 is int, expected float
-Lao;->ۣۣ۟۠۟۟ۢ(Landroid/content/res/TypedArray;ILs9;)Ls9;: control-flow merge: v5 receives incompatible types
-Lao;->۠ۢ۟ۤۨ(Landroid/content/Context;IILh;)Lzn;: control-flow merge: v0 receives incompatible types; control-flow merge: v10 receives incompatible types; control-flow merge: v11 receives incompatible types; control-flow merge: v12 receives incompatible types
-Lao;->ۣۢ۠ۤ۠ۦۨ۠(Lao;Landroid/graphics/RectF;)Z: control-flow merge: v4 receives incompatible types; control-flow merge: v8 receives incompatible types
-Lap;->toString()Ljava/lang/String;: aget-object: v3 is int, expected ref; aget: v3 is conflict, expected ref; aget: v3 is int, expected ref; control-flow merge: v3 receives incompatible types
-Las;->ۣ۟ۡۨۨۨ(Las;F)V: mul-float/2addr: v0 is int, expected float
-Las;->۠ۥۦۥۡۦۨ(Las;)F: div-float/2addr: v0 is int, expected float
-Las;->ۣۣۨ۠۟ۨۤۧ(Las;Lxr;Landroid/graphics/Matrix;Landroid/graphics/Canvas;II)V: cmpl-float: v14 is int, expected float; cmpl-float: v7 is int, expected float; control-flow merge: v0 receives incompatible types; control-flow merge: v10 receives incompatible types
-Lau;->ۣۥۢۥۥ(Lau;)Lja;: return-object: v2 is int, expected ref
-Lb0;-><clinit>()V: control-flow merge: v3 receives incompatible types; control-flow merge: v5 receives incompatible types; control-flow merge: v7 receives incompatible types
-Lb0;->toString()Ljava/lang/String;: control-flow merge: v1 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v6 receives incompatible types
-Lb0;->ۣۡۢۥۣۤۡ(Lb0;La0;)V: control-flow merge: v1 receives incompatible types; move-object: v0 is int, expected ref
-Lb0;->ۢ۠ۤۥۣ۟(Lb0;)Z: return: v1 is ref, expected int
-Lb0;->ۢۨۥۥۨۨۥۢ(Ljava/lang/Object;)Ljava/lang/Object;: return-object: v1 is int, expected ref
-Lb0;->ۦۢۦۦۡۧۤ۟(Lb0;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;: control-flow merge: v1 receives incompatible types; control-flow merge: v10 receives incompatible types; control-flow merge: v15 receives incompatible types; control-flow merge: v3 receives incompatible types
-Lb0;->ۧ۠ۡۤۢ۠(Lb0;)V: control-flow merge: v6 receives incompatible types; move-object: v1 is int, expected ref
-Lb2;->۠ۡۦۤ۠ۢ(Lb2;I)J: return-wide: v2 is ref, expected long
-Lb4;->۟ۤۧۦۥۦ(Lb4;)Landroid/content/res/ColorStateList;: return-object: v1 is int, expected ref
+La2;->handleMessage(Landroid/os/Message;)V: invoke-interface: v4 is int, expected ref; invoke-interface: v5 is ref, expected int
+La3;->run()V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct/range: v9 is ref, expected int
+La4;->ۧۢۢۧۨ(La4;Landroid/util/AttributeSet;I)V: control-flow merge: v0 receives incompatible types; control-flow merge: v1 receives incompatible types
+La7;->equals(Ljava/lang/Object;)Z: control-flow merge: v4 receives incompatible types
+La8;-><init>(Lvo;Ljava/util/ArrayList;)V: invoke-static: v7 is int, expected ref
+La8;->equals(Ljava/lang/Object;)Z: control-flow merge: v3 receives incompatible types
+La8;->ۣۤۧ۠ۤ(La8;Lj9;)Z: return: v2 is ref, expected int
+La8;->ۥۦ۠ۥۨۥۣۢ(Lgm;Ljava/util/List;Llc;Lg4;)Lg4;: control-flow merge: v10 receives incompatible types; control-flow merge: v12 receives incompatible types; control-flow merge: v15 receives incompatible types; control-flow merge: v2 receives incompatible types
+La8;->ۧۥۧۦ(La8;)I: invoke-direct: v1 is int, expected ref
+La8;->ۨ۠۟ۦۥ(La8;Lo;Lo;)Lo;: return-object: v4 is int, expected ref
+La8;->ۨۢۡۡ۟ۨۧ(Llc;Ljava/util/List;I)Lo;: control-flow merge: v0 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v5 receives incompatible types; invoke-virtual: v0 is conflict, expected ref
+La8;->ۨۦۣۣۤۨۤۦ(La8;)Ljava/lang/Object;: invoke-direct: v1 is int, expected ref
+La;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V: invoke-direct: v7 is int, expected ref
+La;->j(Ljava/lang/Object;Ljava/lang/String;)V: invoke-direct: v5 is int, expected ref
+Lab;->ۤۧۧۥۣۡۢ(Lab;Lrd;)V: control-flow merge: v0 receives incompatible types; invoke-direct: v2 is int, expected ref
+Lac;->hashCode()I: invoke-static: v4 is ref, expected int
+Lac;->toString()Ljava/lang/String;: invoke-static: v0 is ref, expected int; invoke-static: v15 is ref, expected int
+Lad;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z: add-float/2addr: v0 is int, expected float; control-flow merge: v0 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v4 receives incompatible types
+Lad;->onViewDetachedFromWindow(Landroid/view/View;)V: invoke-virtual: v3 is int, expected ref
+Lai;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V: control-flow merge: v11 receives incompatible types; control-flow merge: v2 receives incompatible types; invoke-interface: v11 is int, expected ref; invoke-super: v11 is int, expected ref
+Lai;->onCreateDrawableState(I)[I: invoke-static: v0 is int, expected ref
+Lai;->onDraw(Landroid/graphics/Canvas;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v3 receives incompatible types; invoke-virtual: v4 is int, expected float; invoke-virtual: v8 is ref, expected int
+Lai;->onRestoreInstanceState(Landroid/os/Parcelable;)V: invoke-virtual: v4 is ref, expected int
+Lai;->ۣ۟ۧۧۥۣ۟۟(Lai;I)V: control-flow merge: v4 receives incompatible types; invoke-virtual: v4 is conflict, expected ref; invoke-virtual: v4 is int, expected ref
+Lai;->ۤ۟ۦۥ(Lai;I)V: control-flow merge: v5 receives incompatible types; invoke-virtual: v1 is int, expected ref
+Lai;->ۤۦۤۥۢ(Lai;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types
+Lai;->ۦۢ۠ۥ(Lai;)Landroid/content/res/ColorStateList;: invoke-static: v4 is int, expected float; invoke-static: v5 is int, expected float
+Lai;->ۨۦۥۥۣۦۣۥ(Lai;Z)V: invoke-static: v3 is int, expected ref
+Lal;->ۡۡۦۥۥۢ([Lyk;Landroid/graphics/Path;)V: add-float/2addr: v11 is conflict, expected float; add-float/2addr: v11 is int, expected float; add-float/2addr: v15 is conflict, expected float; add-float/2addr: v15 is int, expected float
+Lal;->ۡۡۨ۟ۨۥۢۨ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/util/LinkedHashMap;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
+Lal;->ۣ۟ۧۦ(Ljava/lang/String;)[Lyk;: aput: v3 is float, expected int; control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types
+Lal;->ۤ۠ۤ(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;Ljava/lang/String;I)Lc4;: control-flow merge: v8 receives incompatible types; invoke-direct: v11 is int, expected ref; invoke-direct: v8 is ref, expected int; move-object: v11 is int, expected ref
+Lal;->ۤۡ۟۟ۥ(Lvo;Ljava/util/Set;)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct: v4 is conflict, expected ref; invoke-direct: v7 is int, expected ref
+Lal;->ۣۤۧ۟(Lvo;Ljava/util/HashMap;Z)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v5 receives incompatible types; control-flow merge: v6 receives incompatible types
+Lal;->ۤۤۢۧ(I)Landroid/graphics/PorterDuff$Mode;: return-object: v3 is int, expected ref
+Lal;->ۤۨۦ(Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;)Ljava/util/LinkedHashMap;: control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v3 is conflict, expected ref; invoke-interface: v3 is int, expected ref
+Lal;->ۦۡۤ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/lang/Long;: control-flow merge: v1 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v6 receives incompatible types; invoke-interface: v14 is conflict, expected ref
+Lal;->ۦۦۣۤ۟ۢۤ۟(Ljava/lang/Object;)Ljava/util/LinkedHashMap;: control-flow merge: v1 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v4 is conflict, expected ref; move-object: v1 is int, expected ref
+Lan;-><clinit>()V: invoke-static: v0 is long, expected double
+Lan;->۟۠ۦ(FFZ)F: double-to-float: v2 is long, expected double
 
