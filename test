@@ -1,115 +1,170 @@
-DSShield error report
-Timestamp: 2026-11-25T20:49:12+02:00
+"DSDex Flow V3 - Execution Report
+================================
+Input: Broomie_1.2.2_apks_opt.apk
+Status: FAILED
+Total elapsed: 268.604 seconds (4.48 minutes)
+
+Stage timings (wall-clock):
+  smali_transform                               251.356 s
+  smali.final synchronization and safety checks    168.395 s
+  smali.writing changed Smali                     5.872 s
+  smali.method and field mapping                  3.285 s
+  smali.reference rewriting and staging           2.445 s
+  dex_disassembly_total                           1.521 s
+  smali.inventory                                 0.705 s
+  manifest_class_analysis                         0.100 s
+  dex_archive_extraction                          0.043 s
+  service_provider_contract_analysis              0.000 s
+  class_name_planning_and_reflection              0.000 s
+  manifest_and_resource_xml_rewrite               0.000 s
+
+Additional details:
+  DEX count: 1
+  DEX workers: 1
+  Smali tool jobs per worker: 8
+  Per-DEX timings: classes.dex: disassembly=1.419s, assembly=0.000s, validation=0.000s
+  Member analysis - Methods scanned: 0
+  Member analysis - Methods selected for renaming: 0
+  Member analysis - Methods selected from local contract families: 0
+  Member analysis - Method exclusions: {}
+  Member analysis - Fields scanned: 0
+  Member analysis - Fields selected for renaming: 0
+  Member analysis - Static fields selected: 0
+  Member analysis - Public/protected instance fields selected: 0
+  Member analysis - Other instance fields selected: 0
+  Member analysis - Field exclusions: {}
+  Protection mode: Flow V3
+  Flow V3 outcome: FAILED
+  Flow V3 methods transformed: 18644
+  Flow V3 field instructions rewritten: 112836
+  Flow V3 field accessors generated: 25583
+  Flow V3 generated methods: 53973
+  Flow V3 generated lines: 1271753
+  Flow V3 helper classes: 4
+  Flow V3 distribution: current_classes
+  Flow V3 identifier profile: np_symbols_elements
+  Flow V3 identifier length: 5
+  Flow V3 verification: {'ok': True, 'classes': 9396, 'methods': 97527, 'generated_classes': 4, 'ignored_non_class_artifacts': 88, 'errors': []}
+  Flow V3 dex policy: soft preflight at 4.7 MB; exact hard check at 5 MiB after DEX assembly
+  Flow V3 selected after v3 filter: 9480
+  Flow V3 filter selectors: 1
+  Flow V3 refuse selectors: 0
+
+Notes:
+- Parallel stage durations are wall-clock durations unless explicitly labeled as summed worker time.
+- This report measures this run only; compare runs using the same input and options." 
+"DSShield error report
+Timestamp: 2026-11-26T18:53:43+02:00
 Version: 0.10.118-unsigned
 Input directory: /storage/emulated/0/MT2/apks/TestPro/DSEncryption
-Context: APK protection failed: /storage/emulated/0/MT2/apks/TestPro/DSEncryption/4_5776169630829650116.apk
-Exception: RuntimeError: Flow V3 type validation found pre-existing or unrecoverable mismatches:
-La2;->handleMessage(Landroid/os/Message;)V: invoke-interface: v4 is int, expected ref; invoke-interface: v5 is ref, expected int
-La3;->run()V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct/range: v9 is ref, expected int
-La4;->ۧۦ۟ۥۣۦ(La4;Landroid/util/AttributeSet;I)V: control-flow merge: v0 receives incompatible types; control-flow merge: v1 receives incompatible types
-La7;->equals(Ljava/lang/Object;)Z: control-flow merge: v4 receives incompatible types
-La8;-><init>(Lvo;Ljava/util/ArrayList;)V: invoke-static: v7 is int, expected ref
-La8;->equals(Ljava/lang/Object;)Z: control-flow merge: v3 receives incompatible types
-La8;->ۣۣۤ۠ۤۡۡ(La8;)Ljava/lang/Object;: invoke-direct: v1 is int, expected ref
-La8;->ۣۥۡۨۤ(Llc;Ljava/util/List;I)Lo;: control-flow merge: v0 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v5 receives incompatible types; invoke-virtual: v0 is conflict, expected ref
-La8;->ۣۦۧۥۦۡ(La8;Lj9;)Z: return: v2 is ref, expected int
-La8;->ۤ۟ۦ(Lgm;Ljava/util/List;Llc;Lg4;)Lg4;: control-flow merge: v10 receives incompatible types; control-flow merge: v12 receives incompatible types; control-flow merge: v15 receives incompatible types; control-flow merge: v2 receives incompatible types
-La8;->ۥۦۥ۠ۧۥ۠۟(La8;)I: invoke-direct: v1 is int, expected ref
-La8;->ۣۨۥ(La8;Lo;Lo;)Lo;: return-object: v4 is int, expected ref
-La;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V: invoke-direct: v7 is int, expected ref
-La;->j(Ljava/lang/Object;Ljava/lang/String;)V: invoke-direct: v5 is int, expected ref
-Lab;->ۦۣ۠ۢۧ(Lab;Lrd;)V: control-flow merge: v0 receives incompatible types; invoke-direct: v2 is int, expected ref
-Lac;->hashCode()I: invoke-static: v4 is ref, expected int
-Lac;->toString()Ljava/lang/String;: invoke-static: v0 is ref, expected int; invoke-static: v15 is ref, expected int
-Lad;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z: add-float/2addr: v0 is int, expected float; control-flow merge: v0 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v4 receives incompatible types
-Lad;->onViewDetachedFromWindow(Landroid/view/View;)V: invoke-virtual: v3 is int, expected ref
-Lai;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V: control-flow merge: v11 receives incompatible types; control-flow merge: v2 receives incompatible types; invoke-interface: v11 is int, expected ref; invoke-super: v11 is int, expected ref
-Lai;->onCreateDrawableState(I)[I: invoke-static: v0 is int, expected ref
-Lai;->onDraw(Landroid/graphics/Canvas;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v3 receives incompatible types; invoke-virtual: v4 is int, expected float; invoke-virtual: v8 is ref, expected int
-Lai;->onRestoreInstanceState(Landroid/os/Parcelable;)V: invoke-virtual: v4 is ref, expected int
-Lai;->ۢۧۡ(Lai;Z)V: invoke-static: v3 is int, expected ref
-Lai;->ۣۤۥۨۥۣۥ(Lai;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types
-Lai;->ۣۥۣۤ(Lai;)Landroid/content/res/ColorStateList;: invoke-static: v4 is int, expected float; invoke-static: v5 is int, expected float
-Lai;->ۤۤۡ۟ۥۤ۠۟(Lai;I)V: control-flow merge: v5 receives incompatible types; invoke-virtual: v1 is int, expected ref
-Lai;->ۥۥۤۦۣ(Lai;I)V: control-flow merge: v4 receives incompatible types; invoke-virtual: v4 is conflict, expected ref; invoke-virtual: v4 is int, expected ref
-Lal;->۟ۤ۠ۧۨۥۢۤ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/lang/Long;: control-flow merge: v1 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v6 receives incompatible types; invoke-interface: v14 is conflict, expected ref
-Lal;->۠۟۟ۦۣۡ۠ۡ(Lvo;Ljava/util/HashMap;Z)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v5 receives incompatible types; control-flow merge: v6 receives incompatible types
-Lal;->ۡۡۦۤ(I)Landroid/graphics/PorterDuff$Mode;: return-object: v3 is int, expected ref
-Lal;->ۡۦۥۢۢۤۥ(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;Ljava/lang/String;I)Lc4;: control-flow merge: v8 receives incompatible types; invoke-direct: v11 is int, expected ref; invoke-direct: v8 is ref, expected int; move-object: v11 is int, expected ref
-Lal;->ۣۢۥۤ۠ۤ(Lvo;Ljava/util/Set;)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct: v4 is conflict, expected ref; invoke-direct: v7 is int, expected ref
-Lal;->ۤۥۡۤ۠ۨ۟۟(Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;)Ljava/util/LinkedHashMap;: control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v3 is conflict, expected ref; invoke-interface: v3 is int, expected ref
-Lal;->ۥۥۥۣۤۧ۠۠([Lyk;Landroid/graphics/Path;)V: add-float/2addr: v11 is conflict, expected float; add-float/2addr: v11 is int, expected float; add-float/2addr: v15 is conflict, expected float; add-float/2addr: v15 is int, expected float
-Lal;->ۥۨۤۧۢۤۢ(Ljava/lang/Object;)Ljava/util/LinkedHashMap;: control-flow merge: v1 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v4 is conflict, expected ref; move-object: v1 is int, expected ref
-Lal;->ۦ۟ۤۢ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/util/LinkedHashMap;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
-Lal;->ۦۢۤ۟۟۠ۦۤ(Ljava/lang/String;)[Lyk;: aput: v3 is float, expected int; control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types
-Lan;-><clinit>()V: invoke-static: v0 is long, expected double
-Lan;->ۡۡۤ(FFZ)F: control-flow merge: v10 receives incompatible types; double-to-float: v2 is long, expected double
+Context: APK protection failed: /storage/emulated/0/MT2/apks/TestPro/DSEncryption/Broomie_1.2.2_apks_opt.apk
+Exception: RuntimeError: APK DEX 'classes.dex' (multidex shard 1/2) assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/part_1.dex'. Output directory entries: ['src_1/', 'src_2/']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
+[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
 
 Traceback:
 Traceback (most recent call last):
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 4973, in _protect_apk
-    _transform_smali(transform_roots, scope, patterns,
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                     protected_runtime,
-                     ^^^^^^^^^^^^^^^^^^
-    ...<9 lines>...
-                     flow_stats_out=_transform_stage_flow_stats,
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                     member_analysis_out=member_analysis_report)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 3450, in _transform_smali
-    flow_stats = transform_flow_v3(
-        staged, selected, progress=_flow_progress,
-        input_dir=flow_v3_input_dir)
-  File "/storage/emulated/0/MT2/apks/TestPro/flow_v3_engine.py", line 98, in transform_flow_v3
-    stats = transform(
-        staged,
-    ...<4 lines>...
-        progress=progress,
-    )
-  File "/storage/emulated/0/MT2/apks/TestPro/flow_v3_transform.py", line 850, in transform
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1515, in recover
+    result = repair_smali_tree_after_assembly_failure(
+        smali_root, output_path, java, env, smali_jar,
+    ...<2 lines>...
+        **({"api_level": api_level} if api_level is not None else {}),
+        progress=lambda message: _say(message))
+  File "/storage/emulated/0/MT2/apks/TestPro/repair_engine.py", line 2095, in repair_smali_tree_after_assembly_failure
     raise RuntimeError(
     ...<2 lines>...
-    )
-RuntimeError: Flow V3 type validation found pre-existing or unrecoverable mismatches:
-La2;->handleMessage(Landroid/os/Message;)V: invoke-interface: v4 is int, expected ref; invoke-interface: v5 is ref, expected int
-La3;->run()V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct/range: v9 is ref, expected int
-La4;->ۧۦ۟ۥۣۦ(La4;Landroid/util/AttributeSet;I)V: control-flow merge: v0 receives incompatible types; control-flow merge: v1 receives incompatible types
-La7;->equals(Ljava/lang/Object;)Z: control-flow merge: v4 receives incompatible types
-La8;-><init>(Lvo;Ljava/util/ArrayList;)V: invoke-static: v7 is int, expected ref
-La8;->equals(Ljava/lang/Object;)Z: control-flow merge: v3 receives incompatible types
-La8;->ۣۣۤ۠ۤۡۡ(La8;)Ljava/lang/Object;: invoke-direct: v1 is int, expected ref
-La8;->ۣۥۡۨۤ(Llc;Ljava/util/List;I)Lo;: control-flow merge: v0 receives incompatible types; control-flow merge: v4 receives incompatible types; control-flow merge: v5 receives incompatible types; invoke-virtual: v0 is conflict, expected ref
-La8;->ۣۦۧۥۦۡ(La8;Lj9;)Z: return: v2 is ref, expected int
-La8;->ۤ۟ۦ(Lgm;Ljava/util/List;Llc;Lg4;)Lg4;: control-flow merge: v10 receives incompatible types; control-flow merge: v12 receives incompatible types; control-flow merge: v15 receives incompatible types; control-flow merge: v2 receives incompatible types
-La8;->ۥۦۥ۠ۧۥ۠۟(La8;)I: invoke-direct: v1 is int, expected ref
-La8;->ۣۨۥ(La8;Lo;Lo;)Lo;: return-object: v4 is int, expected ref
-La;->h(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V: invoke-direct: v7 is int, expected ref
-La;->j(Ljava/lang/Object;Ljava/lang/String;)V: invoke-direct: v5 is int, expected ref
-Lab;->ۦۣ۠ۢۧ(Lab;Lrd;)V: control-flow merge: v0 receives incompatible types; invoke-direct: v2 is int, expected ref
-Lac;->hashCode()I: invoke-static: v4 is ref, expected int
-Lac;->toString()Ljava/lang/String;: invoke-static: v0 is ref, expected int; invoke-static: v15 is ref, expected int
-Lad;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z: add-float/2addr: v0 is int, expected float; control-flow merge: v0 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v4 receives incompatible types
-Lad;->onViewDetachedFromWindow(Landroid/view/View;)V: invoke-virtual: v3 is int, expected ref
-Lai;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V: control-flow merge: v11 receives incompatible types; control-flow merge: v2 receives incompatible types; invoke-interface: v11 is int, expected ref; invoke-super: v11 is int, expected ref
-Lai;->onCreateDrawableState(I)[I: invoke-static: v0 is int, expected ref
-Lai;->onDraw(Landroid/graphics/Canvas;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v3 receives incompatible types; invoke-virtual: v4 is int, expected float; invoke-virtual: v8 is ref, expected int
-Lai;->onRestoreInstanceState(Landroid/os/Parcelable;)V: invoke-virtual: v4 is ref, expected int
-Lai;->ۢۧۡ(Lai;Z)V: invoke-static: v3 is int, expected ref
-Lai;->ۣۤۥۨۥۣۥ(Lai;)V: control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types
-Lai;->ۣۥۣۤ(Lai;)Landroid/content/res/ColorStateList;: invoke-static: v4 is int, expected float; invoke-static: v5 is int, expected float
-Lai;->ۤۤۡ۟ۥۤ۠۟(Lai;I)V: control-flow merge: v5 receives incompatible types; invoke-virtual: v1 is int, expected ref
-Lai;->ۥۥۤۦۣ(Lai;I)V: control-flow merge: v4 receives incompatible types; invoke-virtual: v4 is conflict, expected ref; invoke-virtual: v4 is int, expected ref
-Lal;->۟ۤ۠ۧۨۥۢۤ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/lang/Long;: control-flow merge: v1 receives incompatible types; control-flow merge: v14 receives incompatible types; control-flow merge: v6 receives incompatible types; invoke-interface: v14 is conflict, expected ref
-Lal;->۠۟۟ۦۣۡ۠ۡ(Lvo;Ljava/util/HashMap;Z)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types; control-flow merge: v5 receives incompatible types; control-flow merge: v6 receives incompatible types
-Lal;->ۡۡۦۤ(I)Landroid/graphics/PorterDuff$Mode;: return-object: v3 is int, expected ref
-Lal;->ۡۦۥۢۢۤۥ(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;Ljava/lang/String;I)Lc4;: control-flow merge: v8 receives incompatible types; invoke-direct: v11 is int, expected ref; invoke-direct: v8 is ref, expected int; move-object: v11 is int, expected ref
-Lal;->ۣۢۥۤ۠ۤ(Lvo;Ljava/util/Set;)Luo;: control-flow merge: v2 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-direct: v4 is conflict, expected ref; invoke-direct: v7 is int, expected ref
-Lal;->ۤۥۡۤ۠ۨ۟۟(Ljava/util/LinkedHashMap;Ljava/util/LinkedHashMap;)Ljava/util/LinkedHashMap;: control-flow merge: v3 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v3 is conflict, expected ref; invoke-interface: v3 is int, expected ref
-Lal;->ۥۥۥۣۤۧ۠۠([Lyk;Landroid/graphics/Path;)V: add-float/2addr: v11 is conflict, expected float; add-float/2addr: v11 is int, expected float; add-float/2addr: v15 is conflict, expected float; add-float/2addr: v15 is int, expected float
-Lal;->ۥۨۤۧۢۤۢ(Ljava/lang/Object;)Ljava/util/LinkedHashMap;: control-flow merge: v1 receives incompatible types; control-flow merge: v4 receives incompatible types; invoke-interface: v4 is conflict, expected ref; move-object: v1 is int, expected ref
-Lal;->ۦ۟ۤۢ(Ljava/util/LinkedHashMap;Ljava/lang/String;)Ljava/util/LinkedHashMap;: control-flow merge: v0 receives incompatible types; return-object: v0 is conflict, expected ref; return-object: v0 is int, expected ref
-Lal;->ۦۢۤ۟۟۠ۦۤ(Ljava/lang/String;)[Lyk;: aput: v3 is float, expected int; control-flow merge: v0 receives incompatible types; control-flow merge: v2 receives incompatible types; control-flow merge: v3 receives incompatible types
-Lan;-><clinit>()V: invoke-static: v0 is long, expected double
-Lan;->ۡۡۤ(FFZ)F: control-flow merge: v10 receives incompatible types; double-to-float: v2 is long, expected double
+        + (" Original assembler error: " + original_error[-2500:] if original_error else ""))
+RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
 
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 5347, in _protect_apk
+    result = future.result()
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 447, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 5321, in _assemble_one_dex
+    parts = _assemble_smali_verified_multidex(
+        smali_root, assembly_dir, java, env, smali_jar, "APK DEX '{}'".format(dex_name),
+        jobs=tool_jobs,
+        expected_descriptors=validated_smali_descriptors.get(str(smali_root.resolve())),
+        api_level=source_api, expected_dex_version=source_version)
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 2079, in _assemble_smali_verified_multidex
+    count = _assemble_smali_verified(
+        shard_root, output, java, env, smali_jar,
+        f"{label} (multidex shard {index}/{shard_count})",
+        jobs=jobs, expected_descriptors=shard_descriptors,
+        api_level=api_level, expected_dex_version=expected_dex_version)
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 2110, in _assemble_smali_verified
+    _assemble_smali(smali_root, output_path, java, env, smali_jar, label, jobs=jobs,
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    api_level=api_level, expected_dex_version=expected_dex_version)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1566, in _assemble_smali
+    return recover(original)
+  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1530, in recover
+    raise RuntimeError(
+        f"{original_error}\n[DSRepair recovery failed] {type(repair_error).__name__}: {repair_error}") from repair_error
+RuntimeError: APK DEX 'classes.dex' (multidex shard 1/2) assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/part_1.dex'. Output directory entries: ['src_1/', 'src_2/']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
+[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
+../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register."
