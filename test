@@ -1,170 +1,92 @@
-"DSDex Flow V3 - Execution Report
-================================
-Input: Broomie_1.2.2_apks_opt.apk
-Status: FAILED
-Total elapsed: 268.604 seconds (4.48 minutes)
+my message "اهلا. ركز جدا هنا لتحليل الملفات وستجد احدث اصدار من المشروع ايضا. انا تحدثت مع بعض الموديلات كثيرا لاصلاح هذا الخطا وبعدها اصبحت العمليات بتفشل بسبب private methods ومشاكل اخري. فكر جيدا بعد التحليل لاني ظليت ساعات ولم أستطيع وانا احب عملك ولم اتحدث معك منذ البداية لانك محدود واقصد أستطيع إرسال عدد قليل من الرسائل.". 
+his message" وجدت السبب الجذري بالتحديد، بعد تحليل الكراش لوق ومقارنة smali الأصلي بالمحمي خطوة بخطوة. هذا تلخيص دقيق لما حدث فعليًا في ملفاتك:
 
-Stage timings (wall-clock):
-  smali_transform                               251.356 s
-  smali.final synchronization and safety checks    168.395 s
-  smali.writing changed Smali                     5.872 s
-  smali.method and field mapping                  3.285 s
-  smali.reference rewriting and staging           2.445 s
-  dex_disassembly_total                           1.521 s
-  smali.inventory                                 0.705 s
-  manifest_class_analysis                         0.100 s
-  dex_archive_extraction                          0.043 s
-  service_provider_contract_analysis              0.000 s
-  class_name_planning_and_reflection              0.000 s
-  manifest_and_resource_xml_rewrite               0.000 s
+## السبب المؤكد
 
-Additional details:
-  DEX count: 1
-  DEX workers: 1
-  Smali tool jobs per worker: 8
-  Per-DEX timings: classes.dex: disassembly=1.419s, assembly=0.000s, validation=0.000s
-  Member analysis - Methods scanned: 0
-  Member analysis - Methods selected for renaming: 0
-  Member analysis - Methods selected from local contract families: 0
-  Member analysis - Method exclusions: {}
-  Member analysis - Fields scanned: 0
-  Member analysis - Fields selected for renaming: 0
-  Member analysis - Static fields selected: 0
-  Member analysis - Public/protected instance fields selected: 0
-  Member analysis - Other instance fields selected: 0
-  Member analysis - Field exclusions: {}
-  Protection mode: Flow V3
-  Flow V3 outcome: FAILED
-  Flow V3 methods transformed: 18644
-  Flow V3 field instructions rewritten: 112836
-  Flow V3 field accessors generated: 25583
-  Flow V3 generated methods: 53973
-  Flow V3 generated lines: 1271753
-  Flow V3 helper classes: 4
-  Flow V3 distribution: current_classes
-  Flow V3 identifier profile: np_symbols_elements
-  Flow V3 identifier length: 5
-  Flow V3 verification: {'ok': True, 'classes': 9396, 'methods': 97527, 'generated_classes': 4, 'ignored_non_class_artifacts': 88, 'errors': []}
-  Flow V3 dex policy: soft preflight at 4.7 MB; exact hard check at 5 MiB after DEX assembly
-  Flow V3 selected after v3 filter: 9480
-  Flow V3 filter selectors: 1
-  Flow V3 refuse selectors: 0
+الكراش يحدث لأن ميزة **Flow V3 "current_classes" (body virtualization)** في `flow_v3_transform.py` قامت بنقل تنفيذ (implementation) دالة `subscribe` الخاصة بكلاس OneSignal الداخلي:
 
-Notes:
-- Parallel stage durations are wall-clock durations unless explicitly labeled as summed worker time.
-- This report measures this run only; compare runs using the same input and options." 
-"DSShield error report
-Timestamp: 2026-11-26T18:53:43+02:00
-Version: 0.10.118-unsigned
-Input directory: /storage/emulated/0/MT2/apks/TestPro/DSEncryption
-Context: APK protection failed: /storage/emulated/0/MT2/apks/TestPro/DSEncryption/Broomie_1.2.2_apks_opt.apk
-Exception: RuntimeError: APK DEX 'classes.dex' (multidex shard 1/2) assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/part_1.dex'. Output directory entries: ['src_1/', 'src_2/']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
-[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
+```
+com.onesignal.location.internal.controller.impl.i
+```
 
-Traceback:
-Traceback (most recent call last):
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1515, in recover
-    result = repair_smali_tree_after_assembly_failure(
-        smali_root, output_path, java, env, smali_jar,
-    ...<2 lines>...
-        **({"api_level": api_level} if api_level is not None else {}),
-        progress=lambda message: _say(message))
-  File "/storage/emulated/0/MT2/apks/TestPro/repair_engine.py", line 2095, in repair_smali_tree_after_assembly_failure
-    raise RuntimeError(
-    ...<2 lines>...
-        + (" Original assembler error: " + original_error[-2500:] if original_error else ""))
-RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
+ووضعته داخل كلاس **آخر تمامًا وغير مرتبط به إطلاقًا**:
 
-The above exception was the direct cause of the following exception:
+```
+com.onesignal.location.internal.controller.impl.b$d
+```
 
-Traceback (most recent call last):
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 5347, in _protect_apk
-    result = future.result()
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 447, in result
-    return self.__get_result()
-           ~~~~~~~~~~~~~~~~~^^
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
-    raise self._exception
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
-    result = ctx.run(self.task)
-  File "/data/data/com.termux/files/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
-    return fn(*args, **kwargs)
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 5321, in _assemble_one_dex
-    parts = _assemble_smali_verified_multidex(
-        smali_root, assembly_dir, java, env, smali_jar, "APK DEX '{}'".format(dex_name),
-        jobs=tool_jobs,
-        expected_descriptors=validated_smali_descriptors.get(str(smali_root.resolve())),
-        api_level=source_api, expected_dex_version=source_version)
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 2079, in _assemble_smali_verified_multidex
-    count = _assemble_smali_verified(
-        shard_root, output, java, env, smali_jar,
-        f"{label} (multidex shard {index}/{shard_count})",
-        jobs=jobs, expected_descriptors=shard_descriptors,
-        api_level=api_level, expected_dex_version=expected_dex_version)
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 2110, in _assemble_smali_verified
-    _assemble_smali(smali_root, output_path, java, env, smali_jar, label, jobs=jobs,
-    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    api_level=api_level, expected_dex_version=expected_dex_version)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1566, in _assemble_smali
-    return recover(original)
-  File "/storage/emulated/0/MT2/apks/TestPro/engine.py", line 1530, in recover
-    raise RuntimeError(
-        f"{original_error}\n[DSRepair recovery failed] {type(repair_error).__name__}: {repair_error}") from repair_error
-RuntimeError: APK DEX 'classes.dex' (multidex shard 1/2) assembler returned exit code 0 but did not create the expected output '/data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/part_1.dex'. Output directory entries: ['src_1/', 'src_2/']. Assembler output: ../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register.
-[DSRepair recovery failed] RuntimeError: DSRepair found no remaining safe automatic Smali repair for the assembly failure.  Original assembler error: home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[755,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[790,4] Register v13 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[791,4] Register v12 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1011,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1012,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1070,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1071,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1136,4] Register v2 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1137,4] Register v1 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1138,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/util/DataSinks.smali[90,4] Register v0 is not a parameter register.
-../../../../../../data/data/com.termux/files/home/.cache/dsdex/work/apk-v0xs8dz_/protected_1_parts/pre_shard_2/src_1/com/android/apksig/internal/zip/ZipUtils.smali[1303,4] Register v1 is not a parameter register."
+تحققت من هذا بمقارنة الملفين حرفيًا: الكلاس `i` الأصلي كان جسمه بسيطًا (`invoke-virtual {p0,p1}, i->subscribe(Lt3/b;)V`)، لكن في النسخة المحمية تحول إلى:
+```
+invoke-static {v0, v1}, Lb$d;->ۣ۟ۤ۟ۤۤۤۥ(Li;Ljava/lang/Object;)V
+```
+والدالة الجديدة فعلاً مضافة داخل ملف `b$d.smali` الحقيقي (كلاس OneSignal أصلي شرعي، له `EnclosingClass`/`InnerClass` خاصة بكلاس `b`، وليس له أي علاقة بـ `i`).
+
+### أين بالضبط في الكود
+في `flow_v3_transform.py`:
+- السطر ~**2212**: دالة `choose_current_class()` — هي من تختار كلاس "مضيف" عشوائي من نفس الـ package لنقل الكود إليه.
+- السطر ~**2349**: تُستدعى هنا داخل خطوة "Family: body virtualization" عندما `distribution == "current_classes"`.
+
+### لماذا هذا يسبب NoClassDefFoundError بالتحديد
+تأكدت أن `i.smali` موجود فعليًا في **classes.dex** بينما `b$d.smali` (المضيف الجديد) موجود في **classes2.dex** — أي أنهما كانا مقسّمين على ملفي dex مختلفين من الأصل. الفحص الوحيد في `choose_current_class` الذي يُفترض أن يمنع هذا هو:
+```python
+if Path(candidate_item.get("root", ".")) != source_root:
+    continue
+```
+هذا الفحص يعتمد على توزيع الـ dex **الأصلي قبل التحويل**. لكن بعد توليد ~19,587 دالة و~277,657 سطر جديد، يتم إعادة توزيع الكلاسات على ملفات dex من جديد (مرحلة zip_to_dex/multidex) لضبط حدود 64K method و5MB. إعادة التوزيع هذه لا تتحقق أن كل زوج (كلاس مصدر ← كلاس مضيف تم نقل كوده إليه) ما زال ينتهي بهما في نفس الموقع النهائي بشكل سليم — وهذا بالضبط ما يفسر اختفاء/فشل تحميل `b$d` في النسخة المثبتة رغم وجوده في ملفات smali الوسيطة.
+
+## الحل العملي الفوري
+
+المشروع فيه متغير بيئة جاهز يتحكم بهذا السلوك بالضبط:
+```
+DS_FLOW_V3_DISTRIBUTION=helper_only
+```
+(بدل الافتراضي `current_classes`). هذا يجبر الأداة على إنشاء كلاسات مساعدة **جديدة مخصصة** بدل إعادة استخدام كلاسات حقيقية موجودة مسبقًا مثل `b$d`، وهو المسار الأكثر أمانًا والمطبّق فعليًا في `create_helper()` (نفس الملف، ~السطر 2180) الذي يضع الكلاس الجديد صراحة في نفس `root`/package المصدر.
+
+**جرّب البناء بـ `helper_only` أولاً** — إذا اختفى الكراش، هذا يؤكد التشخيص 100%.
+
+## بخصوص مشكلة "private methods" التي ذكرتها
+
+هي من نفس العائلة: في نفس الدالة (حوالي السطر 2350) يوجد فحص `local_private_refs()` يمنع نقل أي body يصل إلى private members لو انتقل لكلاس آخر — لكنه (كما علّق الكود نفسه في السطر ~2353) **لا يغطي كل الحالات**، خصوصًا الأنماط المُولدة من الكومبايلر (compiler-generated access patterns). فإذا رجعت لك أخطاء private methods أخرى، ابحث هناك تحديدًا.
+
+إذا حاب، أقدر أكتب لك patch مباشر يخلي `choose_current_class` ترفض أي كلاس مضيف لا يضمن بقاءه في نفس dex النهائي (مش بس الأصلي)، بدل الاكتفاء بالتحويل لـ helper_only بالكامل.".
+my message "انت محق. اشتغل التطبيق بعد تطبيق helper classes . 😮. فكرة سؤال current classes and helper classes التي انا وضعتها داخل المشروع معناها كالتالي.
+1/ current classes معناها ان النظام ينقل اكواد الاستدعاء الي methods داخل classes اخري وانا اقصد بclasses اخري هي classes موجوده داخل التطبيق نفسه ولا اقصد classes جديده وهذا جيد لتعزيز حماية التطبيق عند استخدام dex2c واعتقد انك تعرف معناها. نسيت ان اقول لك ان النظام يستطيع انشاء classes جديده ولكن عند الحاجه فقط اذا كانت classes الحالية قليلة او امتلات او اسباب اخري.
+2/ helper classes معناها ينقل اكواد الاستدعاء الي classes جديده فقط وانا اخذت الفكرة من تطبيق np manager.
+ما الحل الان لاصلاح النظام. لا أريد حل خاص بهذا التطبيق ولكن اريد قاعدة عامه.
+يمكنك ارسال zip به ملفات المشروع بدون txt or md or smali files واقصد انك ترسل python scripts بعد تحديثها. لم اتوقع حلك المؤقت. 🔥. بالنسبة الي private methods فعندي فكرة وهي نقلها الي methods اخري داخل نفس الكلاس وتغيير اكواد الاستدعاء الاخري له سواء من داخل الميثود او من استدعاءات في classes اخري فما رايك بهذه الفكرة ويمكنك اقتراح فكرة ايضا قبل بدا العمل ونتفق عليها.".
+his message "ممتاز، 🔥 — هذا بالضبط نوع الفحص اللي أحتاجه. خلّيني أشرح لك الحل العام المقترح، ونتفق عليه مع فكرتك عن private methods قبل ما أبدأ الكتابة فعليًا.
+
+## أولاً: فهمت نيتك الصحيحة لـ current_classes
+
+أنت محق، الفكرة قوية فعلاً ضد dex2c (لأن dex2c عادة يستهدف كلاسات محددة بالاسم/النمط للتحويل لنيتيف، فنقل الكود الحساس لكلاس "بريء" موجود أصلاً يكسر هذا الاستهداف). المشكلة مش في الفكرة، المشكلة في **ضمان أن الكلاس المصدر والكلاس المضيف يبقيان دائمًا في نفس ملف dex النهائي** — وهذا الضمان الحالي (`root` check في `choose_current_class`) يعتمد على توزيع الـ dex الأصلي **قبل** التحويل، بينما أي خطوة لاحقة (مثل `_build_smali_shards` في `engine.py` التي تعيد تقسيم smali تلقائيًا لو تجاوز عدد methods/fields حد الأمان 60000) **لا تعرف شيئًا عن هذه العلاقة** وتوزع الملفات حسب الوزن فقط، فيمكن أن تفصل بين الكلاس المصدر والمضيف بدون أي تحذير.
+
+## الحل العام المقترح (3 طبقات، بدون أي خصوصية لتطبيق معين)
+
+**1. تتبّع "علاقة الترحيل" (Relocation Affinity) كبيانات رسمية:**
+كل مرة يقرر `choose_current_class` ترحيل كود من كلاس A إلى كلاس B، نسجّل الزوج (A, B) في بنية مشتركة (Union-Find / خريطة تجميع). هذا يصبح **عقد ملزم**: "هذان الكلاسان يجب أن ينتهيا في نفس dex النهائي، مهما حدث لاحقًا."
+
+**2. فرض هذا العقد في كل مكان يُقسَّم فيه الكود على ملفات dex:**
+أهم نقطة: `_build_smali_shards` (في `engine.py`) حاليًا يوزّع كل ملف smali بشكل مستقل حسب الوزن. سأعدّلها لتُعامل كل "تجمّع" (cluster) من الكلاسات المرتبطة بعلاقة ترحيل كوحدة واحدة غير قابلة للتجزئة عند التوزيع على الـ shards — حتى لو كان التقسيم التلقائي يحدث لاحقًا لأي سبب (امتلاء dex، إلخ).
+
+**3. بوابة تحقق نهائية مستقلة (الأهم):**
+بعد تجميع ملفات dex الحقيقية النهائية، تشغيل فحص مستقل: لكل زوج (A, B) مسجّل في علاقات الترحيل، نتأكد أنهما فعلاً في **نفس** ملف dex النهائي. لو حصل انتهاك، **يفشل البناء فورًا** برسالة واضحة تسمي الكلاسين بالضبط — بدل أن يُشحن APK معطوب بصمت.
+
+ليه هذا أفضل من إصلاح نقطة محددة؟ لأنه **لا يعتمد على معرفتي الكاملة واليقينية بالسبب الدقيق** لكسر هذه الحالة تحديدًا (وأنا لست متأكدًا 100% إن كان السبب `_build_smali_shards` أو نقطة أخرى لم أرها في 2 ميجا من الكود). هذه الطبقة الثالثة تضمن أن **أي** خلل مشابه، بأي آلية، يُكتشف قبل وصول APK للمستخدم، لا بعده.
+
+## ثانيًا: فكرتك عن private methods — أتفق معها، مع ملاحظة واحدة
+
+فكرتك ممتازة وأبسط بكثير من النظام الحالي: بدل نقل جسم الدالة الخاصة لكلاس آخر (اللي يحتاج كل منظومة `local_private_refs` / `_relocation_access_reason` المعقدة والمعترف الكود نفسه أنها لا تغطي كل الحالات)، فقط **إعادة تسمية الدالة ونقلها لمكان آخر داخل نفس الكلاس**، مع تحديث كل نقاط الاستدعاء (الداخلية في نفس الكلاس، وأي accessor/bridge مولّد تلقائيًا من مكان آخر يشير لها بالاسم القديم).
+
+هذا يُلغي فئة كاملة من المشاكل من جذورها لأن:
+- نفس الكلاس = نفس dex دائمًا، بدون أي حاجة لفحص توافق أو صلاحيات وصول.
+- لا حاجة لـ EnclosingClass/InnerClass، ولا تعقيد "هل الوصول عبر package أم لا".
+
+**الملاحظة الوحيدة:** هذا الأسلوب يعطي تعمية الاسم/الهوية فقط، ولا يعطي فائدة "نقل الكود لمكان غير متوقع" ضد dex2c تحديدًا. لكن بما أن الخطورة في نقل private methods عبر الكلاسات كانت دائمًا أعلى من فائدتها المحدودة، أعتقد هذا **مقايضة صحيحة**: نجعل هذا هو السلوك الافتراضي الوحيد لـ private methods في current_classes، وتبقى current_classes (النقل عبر كلاسات حقيقية) متاحة فقط للدوال غير private كما هي الآن.
+
+## القرار قبل البدء
+
+إذا موافق على هذا التصميم (الطبقات الثلاث لـ current_classes + استبدال آلية private methods بإعادة التسمية داخل نفس الكلاس)، أبدأ الكتابة فورًا وأجهز الـ zip بملفات Python المحدّثة فقط. هل أبدأ؟".
+my message "حسنا. ابدا العمل وبعد ذلك سنقوم بتوسيع محرك التحليل والنقل لجعله اضخم والاهم انه يكون سريع وبدقة لنقل اكواد اكثر الي methods جديده مثل "iget-object v0, v2, La2/a;->a:Ljava/lang/Object;
+iget v1, v2, La2/a;->c:I
+" وجعله اكثر تعقيد. سارسل لك ايضا مثال من اداة np manager لاحقا واقصد بعدما ترسل zip جديد لاختبار نظام الحماية الجديد. 🔥".
+a message appeared to me after that "you have reached your limits. please come back after 4 hours.".
